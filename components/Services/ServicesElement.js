@@ -33,7 +33,7 @@ export const CardWrapper = styled.div`
   align-self: center;
   width: 80%;
   border: 1px solid red;
-  padding: 20px;
+  padding: 15px;
   @media screen and (max-width: 968px) {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
@@ -62,7 +62,6 @@ export const Info = styled.div`
   border-radius: 10px;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(65, 64, 64, 0.8);
-  margin-top: 20px;
 `;
 export const CardImgWrapper = styled.div`
   display: flex;
