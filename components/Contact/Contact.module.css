@@ -1,0 +1,109 @@
+.btn {
+  position: relative;
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: 700;
+  border: 2px solid #01bf71;
+  background: transparent;
+  color: #01bf71;
+  overflow: hidden;
+  font-size: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 50px;
+  outline: none;
+  border: 1px solid #01bf71;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  background: none;
+  white-space: nowrap;
+  padding: 12px 30px;
+  font-size: 20px;
+  color: #01bf71;
+  z-index: 10; */
+}
+.spanElement {
+  width: 0;
+  height: 100%;
+  background: #01bf71;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn:hover span {
+  width: 100%;
+}
+.btn:hover {
+  color: #fff;
+}
+.spanElement:hover {
+  border: none;
+}
+
+.CallBtn:hover {
+  transition: all 0.2s ease-in-out;
+  background: #01bf71;
+  color: #fff;
+}
+
+.CallBtn {
+  background: none;
+  padding: 12px 30px;
+  color: #fff;
+  background: #01bf71;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  border: 1px solid #01bf71;
+}
+.whatsapp_float {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  bottom: 80px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  padding-top: 2px;
+}
+@media screen and (max-width: 767px) {
+  /* .whatsapp-icon {
+    margin-top: 10px;
+  } */
+
+  .whatsapp_float {
+    width: 45px;
+    height: 45px;
+    bottom: 120px;
+    right: 20px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Map {
+    /* display: none; */
+    /* width: 100px; */
+    max-width: 250px;
+    max-height: 200px;
+  }
+}

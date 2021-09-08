@@ -1,0 +1,10 @@
+.footer_wrapper {
+  height: 200px;
+  width: 100%;
+  background: #3f3d56;
+}
+@media screen and (max-width: 968px) {
+  .footer_wrapper {
+    /* margin-top: 70px; */
+  }
+}

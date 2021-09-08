@@ -1,0 +1,61 @@
+.MobileNavWrapper {
+  display: none;
+}
+
+@media screen and (max-width: 568px) {
+  .MobileNavWrapper {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    background: #000;
+    display: flex;
+    flex-flow: column;
+    z-index: 100;
+  }
+  .TopBottomNav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 10px;
+    background: #57565e;
+  }
+  .ItemWrapper {
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+      -6px -6px 10px -1px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  .LastNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .MobileLogo {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+
+  .MobileNavicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-right: 10px;
+  }
+  .LogoLink {
+    font-size: 1.2em;
+    color: #fff;
+  }
+}
