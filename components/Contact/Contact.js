@@ -59,35 +59,40 @@ function Contact() {
   );
 
   const handleClick = async () => {
-    const data2 = {
-      name,
-      email,
-      project,
-      message,
-    };
-    await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
+    submitContact({
+      variables: {
+        email: email,
+        name: name,
+        project: project,
+        message: message,
       },
-      body: JSON.stringify(data2),
-    }).then((res) => {
-      if (res.status === 200) {
-        submitContact({
-          variables: {
-            email: email,
-            name: name,
-            project: project,
-            message: message,
-          },
-        });
-        if (data !== null) {
-          setSubmitted(true);
-          resetter();
-        }
-      }
     });
+    if (data !== null) {
+      setSubmitted(true);
+      resetter();
+    }
+    // const data2 = {
+    //   name,
+    //   email,
+    //   project,
+    //   message,
+    // };
+    // await fetch("/api/contact", {
+    //   method: "POST",
+    //   headers: {
+    //     Accept: "application/json, text/plain, */*",
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(data2),
+    // }).then((res) => {
+    //   if (res.status === 200) {
+
+    //     if (data !== null) {
+    //       setSubmitted(true);
+    //       resetter();
+    //     }
+    //   }
+    // });
   };
 
   const resetter = () => {

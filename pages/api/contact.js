@@ -1,6 +1,4 @@
 export default function (req, res) {
-  require("dotenv").config();
-
   if (req.body.email === "" || req.body.name === "") {
     return;
   }
