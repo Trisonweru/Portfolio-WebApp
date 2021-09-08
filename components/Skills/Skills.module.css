@@ -16,7 +16,7 @@
 .content_wrapper {
   display: flex;
   flex-flow: column;
-  width: 80%;
+  width: 75%;
   align-items: center;
   justify-content: center;
   height: auto;
@@ -25,6 +25,7 @@
   margin: 0 auto;
   padding: 20px;
   margin-top: 20px;
+  box-sizing: border-box;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.5),
     -6px -6px 10px -1px rgba(255, 255, 255, 0);
 }
