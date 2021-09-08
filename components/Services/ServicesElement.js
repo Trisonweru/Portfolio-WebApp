@@ -29,8 +29,8 @@ export const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
-  justify-self: center;
-  align-self: center;
+  justify-items: center;
+  align-items: center;
   width: 80%;
   border: 1px solid red;
   padding: 15px;
@@ -38,15 +38,15 @@ export const CardWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
-    justify-self: center;
-    align-self: center;
+    justify-items: center;
+    align-items: center;
   }
   @media screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 25px;
-    justify-self: center;
-    align-self: center;
+    justify-items: center;
+    align-items: center;
   }
 `;
 export const Info = styled.div`
