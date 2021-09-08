@@ -27,23 +27,22 @@ export const SubHeading = styled.p`
 `;
 export const CardWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto auto auto;
   column-gap: 40px;
   justify-items: center;
   align-items: center;
   width: 80%;
-  border: 1px solid red;
   padding: 15px;
   @media screen and (max-width: 968px) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     row-gap: 50px;
     justify-items: center;
     align-items: center;
   }
   @media screen and (max-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     row-gap: 25px;
     justify-items: center;
     align-items: center;
@@ -61,6 +60,20 @@ export const Info = styled.div`
   border-radius: 10px;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(65, 64, 64, 0.8);
+  @media screen and (max-width: 968px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    justify-items: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 25px;
+    justify-items: center;
+    align-items: center;
+  }
 `;
 export const CardImgWrapper = styled.div`
   display: flex;
