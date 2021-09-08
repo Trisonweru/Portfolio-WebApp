@@ -36,14 +36,14 @@ export const CardWrapper = styled.div`
   @media screen and (max-width: 968px) {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 50px;
+    // row-gap: 50px;
     justify-items: center;
     align-items: center;
   }
   @media screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 25px;
+    // row-gap: 25px;
     justify-items: center;
     align-items: center;
   }
@@ -60,20 +60,6 @@ export const Info = styled.div`
   border-radius: 10px;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(65, 64, 64, 0.8);
-  @media screen and (max-width: 968px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 50px;
-    justify-items: center;
-    align-items: center;
-  }
-  @media screen and (max-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 25px;
-    justify-items: center;
-    align-items: center;
-  }
 `;
 export const CardImgWrapper = styled.div`
   display: flex;
