@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ServicesWrapper = styled.div`
   width: 100%;
-
   background: #000;
   display: flex;
   flex-direction: column;
@@ -33,6 +32,8 @@ export const CardWrapper = styled.div`
   justify-self: center;
   align-self: center;
   width: 80%;
+  border: 1px solid red;
+  padding: 20px;
   @media screen and (max-width: 968px) {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
