@@ -16,7 +16,7 @@
 .content_wrapper {
   display: flex;
   flex-flow: column;
-  width: 78%;
+  width: 80%;
   align-items: center;
   justify-content: center;
   height: auto;
