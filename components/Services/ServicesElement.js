@@ -35,20 +35,19 @@ export const CardWrapper = styled.div`
   border: 1px solid red;
   padding: 15px;
   @media screen and (max-width: 968px) {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
+    justify-self: center;
+    align-self: center;
   }
   @media screen and (max-width: 768px) {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 25px;
+    justify-self: center;
+    align-self: center;
   }
-  // margin-top: 30px;
-  // display: flex;
-  // flex-flow: row wrap;
-  // justify-content: space-between;
-  // width: 90%;
-  // height: 100%;
-  // align-items: center;
 `;
 export const Info = styled.div`
   display: flex;
