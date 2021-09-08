@@ -29,7 +29,7 @@ export const SubHeading = styled.p`
 export const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 50px;
+  column-gap: 40px;
   justify-content: center;
   width: 80%;
   @media screen and (max-width: 968px) {
