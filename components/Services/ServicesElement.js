@@ -60,6 +60,10 @@ export const Info = styled.div`
   border-radius: 10px;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(65, 64, 64, 0.8);
+  @media screen and (max-width: 768px) {
+    width: 220px;
+    height: 250px;
+  }
 `;
 export const CardImgWrapper = styled.div`
   display: flex;
