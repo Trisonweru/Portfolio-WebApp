@@ -36,14 +36,14 @@ export const CardWrapper = styled.div`
   @media screen and (max-width: 968px) {
     display: grid;
     grid-template-columns: 1fr;
-    // row-gap: 50px;
+    row-gap: 50px;
     justify-items: center;
     align-items: center;
   }
   @media screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: 1fr;
-    // row-gap: 25px;
+    row-gap: 25px;
     justify-items: center;
     align-items: center;
   }
@@ -61,8 +61,8 @@ export const Info = styled.div`
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(65, 64, 64, 0.8);
   @media screen and (max-width: 768px) {
-    width: 220px;
-    height: 250px;
+    width: 270px;
+    height: 300px;
   }
 `;
 export const CardImgWrapper = styled.div`
