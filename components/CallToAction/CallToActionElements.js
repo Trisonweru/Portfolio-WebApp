@@ -15,7 +15,7 @@ export const CallToActionContent = styled.div`
 
   @media screen and (max-width: 500px) {
     height: 350px;
-    width: 86%;
+    // width: 86%;
   }
 `;
 
