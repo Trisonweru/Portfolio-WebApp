@@ -30,7 +30,8 @@ export const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
-  justify-content: center;
+  justify-self: center;
+  align-self: center;
   width: 80%;
   @media screen and (max-width: 968px) {
     grid-template-columns: repeat(2, 1fr);
