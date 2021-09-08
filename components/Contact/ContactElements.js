@@ -97,9 +97,9 @@ export const ContactSectionMap = styled.div`
   flex-flow: column;
   align-items: center;
   width: 100%;
-  // padding-top: 20px;
   background: #dbe0de;
   margin: 10px;
+  margin-bottom: 15px;
 `;
 
 export const CallBtnWrapper = styled.div`
