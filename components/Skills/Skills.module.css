@@ -106,9 +106,6 @@
 }
 
 .list_skills_wrapper {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem; */
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -123,11 +120,19 @@
   width: 100%;
 }
 .heading_wrapper {
-  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
 }
 .motiondiv {
   width: 100%;
   padding: 20px;
+  height: 100%;
+  display: flex;
+
+  align-content: center;
+  flex-flow: column;
 }
 @media screen and (max-width: 1150px) {
   .list_skills_wrapper {
@@ -153,6 +158,10 @@
   .list_skills_wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+  .motiondiv {
+    display: flex;
+    align-items: start;
   }
 }
 @media screen and (max-width: 768px) {

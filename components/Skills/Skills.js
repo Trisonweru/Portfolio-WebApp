@@ -75,8 +75,10 @@ function Skills() {
           className={styles.motiondiv}
         >
           <div className={styles.heading_wrapper}>
-            <h2 className={styles.skills_heading}>Skills</h2>
-            <p className={styles.sub_text}>My technical level</p>
+            <div>
+              <h2 className={styles.skills_heading}>Skills</h2>
+              <p className={styles.sub_text}>My technical level</p>
+            </div>
           </div>
           {/* Mobile Skills */}
           <MobileSkillsWrapper>

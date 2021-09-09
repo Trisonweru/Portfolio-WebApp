@@ -32,13 +32,16 @@ export const MobileSkillsWrapper = styled.div`
   align-items: center;
   column-gap: 40px;
   align-items: start;
+  margin-top: 20px;
   @media screen and (max-width: 968px) {
     grid-template-columns: auto;
-    column-gap: 20px;
+    row-gap: 10px;
+    margin-top: 0;
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: auto;
-    gap: 20px;
+    row-gap: 10px;
+    margin-top: 0;
   }
 `;
 
