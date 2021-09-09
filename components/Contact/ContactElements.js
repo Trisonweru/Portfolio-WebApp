@@ -123,7 +123,7 @@ export const ResponseMessage = styled.div`
   align-items: center;
   width: 100%;
   height: 60px;
-  background: #033a24;
-  color: #4cdaa1;
+  background: #a8bdb4;
+  color: #000;
   margin-top: 10px;
 `;
