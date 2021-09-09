@@ -18,7 +18,12 @@ function Footer() {
     setCopyClicked(true);
   };
   const hoverFunc = () => {
-    setHovered(!hovered);
+    setTimeout(() => {
+      setHovered(!hovered);
+    }, 200);
+  };
+  const hoverFunc1 = () => {
+    setHovered(false);
   };
   return (
     <div className={styles.footer_wrapper}>
@@ -26,7 +31,7 @@ function Footer() {
         <div
           className={styles.input_wrapper}
           onMouseEnter={hoverFunc}
-          onMouseLeave={hoverFunc}
+          onMouseLeave={hoverFunc1}
         >
           <div onClick={copyCat} className={styles.inputdiv}>
             <input

@@ -71,28 +71,6 @@ function Contact() {
       setSubmitted(true);
       resetter();
     }
-    // const data2 = {
-    //   name,
-    //   email,
-    //   project,
-    //   message,
-    // };
-    // await fetch("/api/contact", {
-    //   method: "POST",
-    //   headers: {
-    //     Accept: "application/json, text/plain, */*",
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(data2),
-    // }).then((res) => {
-    //   if (res.status === 200) {
-
-    //     if (data !== null) {
-    //       setSubmitted(true);
-    //       resetter();
-    //     }
-    //   }
-    // });
   };
 
   const resetter = () => {
