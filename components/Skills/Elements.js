@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const SkillWrapper = styled.div`
-  // position: relative;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -26,25 +25,21 @@ export const Titleh4 = styled.h4``;
 //Mobile Navigation Styles
 
 export const MobileSkillsWrapper = styled.div`
-  width: 80%;
-
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
   column-gap: 40px;
   align-items: start;
   @media screen and (max-width: 968px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto;
     column-gap: 20px;
   }
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: auto;
     gap: 20px;
   }
-  // display: flex;
-  // flex-flow: row wrap;
-  // justify-content: space-evenly;
-  // align-items: flex-start;
-  // width: 100%;
 `;
 
 export const Frontend = styled.div`

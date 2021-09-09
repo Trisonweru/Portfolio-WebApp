@@ -23,9 +23,9 @@
   background: #fff;
   border-radius: 10px;
   margin: 0 auto;
-  padding: 20px;
+  /* padding: 20px; */
   margin-top: 20px;
-  box-sizing: border-box;
+
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.5),
     -6px -6px 10px -1px rgba(255, 255, 255, 0);
 }
@@ -38,7 +38,7 @@
   font-size: 14px;
   text-align: center;
   margin-top: -10px;
-  color: #01bf71;
+  color: #000;
   font-weight: 600;
 }
 .skills_nav {
@@ -125,6 +125,10 @@
 .heading_wrapper {
   height: 200px;
 }
+.motiondiv {
+  width: 100%;
+  padding: 20px;
+}
 @media screen and (max-width: 1150px) {
   .list_skills_wrapper {
     grid-template-columns: repeat(3, 1fr);
@@ -158,7 +162,4 @@
   }
 }
 @media screen and (max-width: 568px) {
-  .sub_text {
-    color: #fff;
-  }
 }
