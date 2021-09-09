@@ -51,7 +51,7 @@
   margin: 0 auto;
 }
 .Logo {
-  font-size: 30px;
+  font-size: 18px;
   color: #fff;
   cursor: pointer;
   padding: 5px;
@@ -94,6 +94,7 @@
 .git_icon {
   cursor: pointer;
 }
+
 .mobi_bars {
   display: none;
 }
