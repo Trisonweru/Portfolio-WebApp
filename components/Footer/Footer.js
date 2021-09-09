@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Footer.module.css";
 import Link from "next/link";
 import {
@@ -6,11 +6,32 @@ import {
   UilLinkedinAlt,
   UilWhatsapp,
   UilGithub,
+  UilCopy,
 } from "@iconscout/react-unicons";
 
 function Footer() {
+  const [copyText, setCopyText] = useState("isaactrisonwaweru@gmail.com");
+  const [copyClicked, setCopyClicked] = useState(false);
+  const copyCat = () => {
+    navigator.clipboard.writeText(copyText);
+    setCopyClicked(true);
+  };
   return (
     <div className={styles.footer_wrapper}>
+      <div className={styles.copyEmail}>
+        <div className={styles.input_wrapper}>
+          <div onClick={copyCat}>
+            <input
+              disabled
+              value={copyClicked ? "Copied email address" : copyText}
+              className={copyClicked ? styles.input_clicked : styles.input}
+            />
+          </div>
+          <div className={styles.copyIcon} onClick={copyCat}>
+            <UilCopy size="25px" color="#fff" />
+          </div>
+        </div>
+      </div>
       <div className={styles.footer_container}>
         <div className={styles.footer_title}>{"Social"}</div>
         <div className={styles.icon_wrapper}>
