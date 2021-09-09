@@ -15,12 +15,20 @@ function Footer() {
         <div className={styles.footer_title}>{"Social"}</div>
         <div className={styles.icon_wrapper}>
           <div className={styles.icon_container}>
-            <Link href="tel:+254-011-488-4275" passHref={true}>
+            <a
+              href="https://github.com/Trisonweru?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <UilGithub size="25px" color="#fff" />
-            </Link>
+            </a>
           </div>
           <div className={styles.icon_container}>
-            <a href="https://twitter.com/TrisonWaweru" target="_blank">
+            <a
+              href="https://twitter.com/TrisonWaweru"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <UilTwitterAlt size="25px" color="#fff" />
             </a>
           </div>
@@ -28,6 +36,7 @@ function Footer() {
             <a
               href="https://www.linkedin.com/in/isaac-waweru-6b7877167/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <UilLinkedinAlt size="25px" color="#fff" />
             </a>
