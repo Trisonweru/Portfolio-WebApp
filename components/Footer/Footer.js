@@ -30,6 +30,7 @@ function Footer() {
           <div className={styles.copyIcon} onClick={copyCat}>
             <UilCopy size="25px" color="#fff" />
           </div>
+          
         </div>
       </div>
       <div className={styles.footer_container}>

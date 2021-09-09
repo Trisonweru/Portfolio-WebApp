@@ -50,3 +50,21 @@
 .spanElement:hover {
   border: none;
 }
+.CallToActionContent {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background: #01bf71;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.5),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0);
+}
+@media screen and (max-width: 500px) {
+  .CallToActionContent {
+    height: 350px;
+  }
+}

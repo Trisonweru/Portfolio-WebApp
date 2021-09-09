@@ -64,6 +64,7 @@
   cursor: pointer;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
+  border: none;
 }
 .footer_title {
   display: flex;
