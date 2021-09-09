@@ -12,25 +12,35 @@ import {
 function Footer() {
   const [copyText, setCopyText] = useState("isaactrisonwaweru@gmail.com");
   const [copyClicked, setCopyClicked] = useState(false);
+  const [hovered, setHovered] = useState(false);
   const copyCat = () => {
     navigator.clipboard.writeText(copyText);
     setCopyClicked(true);
   };
+  const hoverFunc = () => {
+    setHovered(!hovered);
+  };
   return (
     <div className={styles.footer_wrapper}>
       <div className={styles.copyEmail}>
-        <div className={styles.input_wrapper}>
-          <div onClick={copyCat}>
+        <div
+          className={styles.input_wrapper}
+          onMouseEnter={hoverFunc}
+          onMouseLeave={hoverFunc}
+        >
+          <div onClick={copyCat} className={styles.inputdiv}>
             <input
               disabled
               value={copyClicked ? "Copied email address" : copyText}
               className={copyClicked ? styles.input_clicked : styles.input}
             />
+            <span className={styles.clickToCopy}>
+              {hovered ? "Click to copy" : ""}
+            </span>
           </div>
           <div className={styles.copyIcon} onClick={copyCat}>
             <UilCopy size="25px" color="#fff" />
           </div>
-          
         </div>
       </div>
       <div className={styles.footer_container}>
