@@ -4,7 +4,8 @@ import Wave from "../components/SvgWave/Wave";
 import Skills from "../components/Skills/Skills";
 import Services from "../components/Services/Services";
 import CallToAction from "../components/CallToAction/CallToAction";
-export default function Home() {
+import withTransition from "../components/HOC/withTransition";
+function Home() {
   return (
     <>
       <HeroSection />
@@ -15,3 +16,4 @@ export default function Home() {
     </>
   );
 }
+export default withTransition(Home);

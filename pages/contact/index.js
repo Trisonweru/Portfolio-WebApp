@@ -1,5 +1,6 @@
 import React from "react";
 import Contact from "../../components/Contact/Contact";
+import withTransition from "../../components/HOC/withTransition";
 
 function index() {
   return (
@@ -9,4 +10,4 @@ function index() {
   );
 }
 
-export default index;
+export default withTransition(index);

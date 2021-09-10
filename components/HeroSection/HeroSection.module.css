@@ -124,7 +124,7 @@
 .timeDisplay {
   position: absolute;
   top: 60%;
-  right: 135px;
+  right: 125px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,7 +182,7 @@
   border-radius: 25px;
   text-align: center;
   font-weight: 700;
-  border: 2px solid #01bf71;
+  border: 2px solid #b5cac2;
   background: transparent;
   color: #fff;
   overflow: hidden;

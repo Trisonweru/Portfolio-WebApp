@@ -13,9 +13,6 @@ import { UilAngleRight, UilArrowRight } from "@iconscout/react-unicons";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Card from "./ListScroll";
-// import { connect } from "react-redux";
-// import * as action_types from "../../redux/dispatch";
-
 import { HeroContainer, Video } from "./HeroSectionELements";
 
 function HeroSection(props) {
