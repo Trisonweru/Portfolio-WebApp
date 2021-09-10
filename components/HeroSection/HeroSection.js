@@ -1,14 +1,22 @@
 import React, { useState } from "react";
 import styles from "./HeroSection.module.css";
 import Image from "next/image";
-import image from "../../public/HeroBG.jpg";
+import {
+  UilTwitterAlt,
+  UilLinkedinAlt,
+  UilWhatsapp,
+  UilGithub,
+  UilCopy,
+} from "@iconscout/react-unicons";
+import image from "../../public/background.svg";
 import { UilAngleRight, UilArrowRight } from "@iconscout/react-unicons";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import Card from "./ListScroll";
 // import { connect } from "react-redux";
 // import * as action_types from "../../redux/dispatch";
 
-import { HeroContainer } from "./HeroSectionELements";
+import { HeroContainer, Video } from "./HeroSectionELements";
 
 function HeroSection(props) {
   const [hover, setHover] = useState(false);
@@ -25,15 +33,74 @@ function HeroSection(props) {
 
   return (
     <div className={styles.hero_container}>
-      {/* <div className={styles.hero_bg}>
-        <Image
-          src={image}
-          alt="Backgound image"
-          placeholder="blur"
-          className={styles.hero_img}
-          layout="fill"
-        />
-      </div> */}
+      <div className={styles.HeroHeading}>
+        <h1 className={styles.headingH1}>
+          I'm Freelance Full-Stack Web Developer Bringing Your Ideas Into Life{" "}
+        </h1>
+      </div>
+      <div className={styles.subHeading}>
+        <h2 className={styles.subText}>
+          I help companies design and develop progressive web applications with
+          delightful user experience. I'm focussing on working on designs and
+          implementation of full-stack web solutions using React, Redux, Nextjs,
+          GraphQl and MongoDB.
+        </h2>
+      </div>
+      <div className={styles.btn_wrapper}>
+        <button
+          onMouseEnter={onHover}
+          onMouseLeave={onHover}
+          className={styles.btn}
+          onClick={handleClick}
+        >
+          <span className={styles.spanElement}></span>
+          {" Contact me"} {hover ? <UilAngleRight /> : <UilArrowRight />}
+        </button>
+      </div>
+      {/** Social icons */}
+      <div className={styles.social_container}>
+        <div className={styles.social_title}>{"Social"}</div>
+        <div className={styles.icon_wrapper}>
+          <div className={styles.icon_container}>
+            <a
+              href="https://github.com/Trisonweru?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <UilGithub size="25px" color="#fff" />
+            </a>
+          </div>
+          <div className={styles.icon_container}>
+            <a
+              href="https://twitter.com/TrisonWaweru"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <UilTwitterAlt size="25px" color="#fff" />
+            </a>
+          </div>
+          <div className={styles.icon_container}>
+            <a
+              href="https://www.linkedin.com/in/isaac-waweru-6b7877167/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <UilLinkedinAlt size="25px" color="#fff" />
+            </a>
+          </div>
+          <div className={styles.icon_container}>
+            <Link href="tel:+254-011-488-4275" passHref={true}>
+              <UilWhatsapp size="25px" color="#fff" />
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className={styles.timeDisplay}>
+        <div className={styles.circle}>Available for work</div>
+      </div>
+      <div className={styles.hero_bg}></div>
+
+      {/* 
       <div className={styles.hero_content}>
         <h1 className={styles.h1}>{"Hi, I'am Isaac"}</h1>
         <h3 className={styles.h3}>{"Full stack web developer"}</h3>
@@ -59,9 +126,9 @@ function HeroSection(props) {
         <div className={styles.skill1}>{"React JS"}</div>
         <div className={styles.skill2}>{"Next JS"}</div>
         <div className={styles.skill3}>{"Redux"}</div>
-        <div className={styles.skill4}>{"GraphQL"}</div>
-      </div>
-      <Card />
+        <div className={styles.skill4}>{"GraphQL"}</div> 
+      </div> */}
+      {/* <Card /> */}
     </div>
   );
 }

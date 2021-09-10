@@ -15,3 +15,5 @@ export const HeroContainer = styled.div`
   background-size: cover;
   background-position: center;
 `;
+
+export const Video = styled.video``;

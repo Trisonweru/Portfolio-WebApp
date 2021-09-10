@@ -36,7 +36,7 @@ function Footer() {
           <div onClick={copyCat} className={styles.inputdiv}>
             <input
               disabled
-              value={copyClicked ? "Copied email address" : copyText}
+              value={copyClicked ? "Copied!" : copyText}
               className={copyClicked ? styles.input_clicked : styles.input}
             />
             <span className={styles.clickToCopy}>

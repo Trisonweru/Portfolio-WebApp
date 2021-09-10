@@ -26,11 +26,9 @@ export const services = [
       "React JS, Next Js, Redux, Apollo-Client and Django/Flask-Python",
     description: [
       {
-        item: "Wireframing",
+        item: "UX/UI designing",
       },
-      {
-        item: "Prototyping",
-      },
+
       {
         item: "Design implementation",
       },
