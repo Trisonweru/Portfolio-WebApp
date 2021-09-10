@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import styles from "./withTransition.module.css";
 
-export default function withTransition(OriginalComponent) {
-  return () => (
+const withTransition = (OriginalComponent) => {
+  const MyComp = () => (
     <>
       <OriginalComponent />
       <motion.div
@@ -21,4 +21,8 @@ export default function withTransition(OriginalComponent) {
       />
     </>
   );
-}
+  MyComp.displayName = "Anime";
+  return MyComp;
+};
+
+export default withTransition;
