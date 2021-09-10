@@ -35,15 +35,17 @@ function HeroSection(props) {
     <div className={styles.hero_container}>
       <div className={styles.HeroHeading}>
         <h1 className={styles.headingH1}>
-          I'm Freelance Full-Stack Web Developer Bringing Your Ideas Into Life{" "}
+          {
+            " I'm Freelance Full-Stack Web Developer Bringing Your Ideas Into Life "
+          }
         </h1>
       </div>
       <div className={styles.subHeading}>
         <h2 className={styles.subText}>
-          I help companies design and develop progressive web applications with
+          {`I help companies design and develop progressive web applications with
           delightful user experience. I'm focussing on working on designs and
           implementation of full-stack web solutions using React, Redux, Nextjs,
-          GraphQl and MongoDB.
+          GraphQl and MongoDB.`}
         </h2>
       </div>
       <div className={styles.btn_wrapper}>
@@ -96,7 +98,7 @@ function HeroSection(props) {
         </div>
       </div>
       <div className={styles.timeDisplay}>
-        <div className={styles.circle}>Available for work</div>
+        <div className={styles.circle}>{"Available for work"}</div>
       </div>
       <div className={styles.hero_bg}></div>
 
