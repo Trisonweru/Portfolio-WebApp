@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "./withTransition.module.css";
 
-const withTransition = (OriginalComponent) => {
+export default function withTransition(OriginalComponent) {
   return () => (
     <>
       <OriginalComponent />
@@ -21,6 +21,4 @@ const withTransition = (OriginalComponent) => {
       />
     </>
   );
-};
-withTransition.displayName = "WithTransition";
-export default withTransition;
+}
