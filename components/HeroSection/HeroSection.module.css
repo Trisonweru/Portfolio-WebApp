@@ -50,8 +50,8 @@
 }
 .subHeading {
   position: absolute;
-  top: 45%;
-  left: 150px;
+  top: 42%;
+  left: 135px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -63,8 +63,8 @@
 }
 .btn_wrapper {
   position: absolute;
-  top: 67%;
-  left: 150px;
+  top: 64%;
+  left: 135px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -74,7 +74,7 @@
   position: absolute;
   width: 20%;
   top: 85%;
-  left: 150px;
+  left: 135px;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
@@ -124,7 +124,7 @@
 .timeDisplay {
   position: absolute;
   top: 60%;
-  right: 150px;
+  right: 135px;
   display: flex;
   align-items: center;
   justify-content: center;
