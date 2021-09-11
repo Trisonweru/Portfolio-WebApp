@@ -17,7 +17,6 @@ export const AboutTitleWrapper = styled.div`
 `;
 export const Titleh1 = styled.h1`
   color: #fff;
-  max-width: 60%;
   font-size: 3.5em;
   font-weight: 700;
   text-shadow: 0 0 3px #ff0000, 0 0 5px #3cff00;

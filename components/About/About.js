@@ -1,6 +1,8 @@
 import React from "react";
 import SVGImage from "../../public/Svg-6.svg";
 import SVGImage2 from "../../public/Svg-7.svg";
+import Background from "../../public/HeroBG.jpg";
+import Image from "next/dist/client/image";
 import Contents from "./Contents";
 import styles from "./About.module.css";
 import {
@@ -14,8 +16,17 @@ function About() {
   return (
     <AboutWrapper>
       <div className={styles.AboutHero}>
-        <Titleh1>{"About me"}</Titleh1>
-        <TitleSpan>{"My Personal Journey"}</TitleSpan>
+        <Image
+          src={Background}
+          alt="Background image"
+          objectFit={"fill"}
+          className={styles.backgroundImage}
+        />
+        <div className={styles.bglinear}></div>
+        <div className={styles.titleContainer}>
+          <Titleh1>{"About me"}</Titleh1>
+          <TitleSpan>{"My Personal Journey"}</TitleSpan>
+        </div>
       </div>
       <AboutTitleWrapper>
         {/* <Titleh1>Qualification</Titleh1>
