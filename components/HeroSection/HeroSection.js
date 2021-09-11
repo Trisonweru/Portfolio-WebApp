@@ -24,12 +24,7 @@ function HeroSection(props) {
   const onHover = () => {
     setHover(!hover);
   };
-  router.events.on("routeChangeStart", () => {
-    return setStart(true);
-  });
-  router.events.on("routeChangeError", () => {
-    return setStart(false);
-  });
+
   const handleClick = () => {
     router.push("/contact");
     // props.dispatch({ type: "HOME_CLICKED", payload: hover });
@@ -39,19 +34,12 @@ function HeroSection(props) {
   const dateSplit = today.split(" ");
   return (
     <div className={styles.hero_container}>
-      {start ? (
-        <div className={styles.transits}>
-          {" "}
-          <Image
-            src={Background}
-            alt="Background image"
-            objectFit={"fill"}
-            className={styles.backgroundImage}
-          />
-        </div>
-      ) : (
-        ""
-      )}
+      {/* <Image
+        src={Background}
+        alt="Background image"
+        objectFit={"fill"}
+        className={styles.backgroundImage}
+      /> */}
       <div className={styles.bglinear}></div>
 
       <div className={styles.HeroHeading}>
