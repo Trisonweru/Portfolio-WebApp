@@ -7,6 +7,8 @@ import {
 import styles from "./Contact.module.css";
 import Link from "next/link";
 import { CREATE_CONTACT } from "../Apollo_Client/Query";
+import Background from "../../public/HeroBG.jpg";
+import Image from "next/dist/client/image";
 import {
   ContactWrapper,
   ContactItemsWrapper,
@@ -130,8 +132,17 @@ function Contact() {
   return (
     <ContactWrapper>
       <div className={styles.contactHero}>
-        <Titleh1>{"Interested ?"}</Titleh1>
-        <TitleSpan>{"Lets Get In Touch!"}</TitleSpan>
+        <Image
+          src={Background}
+          alt="Background image"
+          objectFit={"fill"}
+          className={styles.backgroundImage}
+        />
+        <div className={styles.bglinear}></div>
+        <div className={styles.titleContainer}>
+          <Titleh1>{"Interested ?"}</Titleh1>
+          <TitleSpan>{"Lets Get In Touch!"}</TitleSpan>
+        </div>
       </div>
       <ContactItemsWrapper>
         <ContactSection>
