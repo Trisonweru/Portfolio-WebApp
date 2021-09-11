@@ -14,6 +14,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Card from "./ListScroll";
 import { HeroContainer, Video } from "./HeroSectionELements";
+import Background from "../../public/HeroBG.jpg";
+import FreelanceImage from "../../public/background.svg";
 
 function HeroSection(props) {
   const [hover, setHover] = useState(false);
@@ -29,9 +31,16 @@ function HeroSection(props) {
   };
   const today = Date().toLocaleString();
   const dateSplit = today.split(" ");
-  console.log(dateSplit[2]);
   return (
     <div className={styles.hero_container}>
+      {/* <Image
+        src={Background}
+        alt="Background image"
+        objectFit={"fill"}
+        className={styles.backgroundImage}
+      /> */}
+      <div className={styles.bglinear}></div>
+
       <div className={styles.HeroHeading}>
         <h1 className={styles.headingH1}>
           {

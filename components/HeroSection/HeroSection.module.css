@@ -19,6 +19,13 @@
   background-size: cover;
   background-position: center;
 }
+.hero_container::before {
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
+    url("../../public/HeroBG.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
 .hero_bg {
   width: 70%;

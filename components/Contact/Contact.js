@@ -135,7 +135,7 @@ function Contact() {
         <Image
           src={Background}
           alt="Background image"
-          objectFit={"fill"}
+          objectFit="none"
           className={styles.backgroundImage}
         />
         <div className={styles.bglinear}></div>
