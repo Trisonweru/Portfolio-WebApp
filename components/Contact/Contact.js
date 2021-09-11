@@ -25,6 +25,8 @@ import {
   ContactSectionMap,
   CallBtnWrapper,
   ResponseMessage,
+  Titleh1,
+  TitleSpan,
 } from "./ContactElements";
 
 import dynamic from "next/dynamic";
@@ -127,6 +129,10 @@ function Contact() {
 
   return (
     <ContactWrapper>
+      <div className={styles.contactHero}>
+        <Titleh1>{"Interested ?"}</Titleh1>
+        <TitleSpan>{"Lets Get In Touch!"}</TitleSpan>
+      </div>
       <ContactItemsWrapper>
         <ContactSection>
           <HeadingWrapper>

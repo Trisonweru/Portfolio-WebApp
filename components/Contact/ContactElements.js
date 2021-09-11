@@ -6,7 +6,7 @@ export const ContactWrapper = styled.div`
   flex-flow: row wrap;
   align-items: start;
   justify-content: center;
-  margin-top: 20px;
+
   margin-bottom: 20px;
 `;
 export const ContactItemsWrapper = styled.div`
@@ -37,6 +37,20 @@ export const HeadingWrapper = styled.div`
 export const Heading = styled.h1`
   font-size: 38px;
   color: #01bf71;
+`;
+
+export const Titleh1 = styled.h1`
+  color: #fff;
+  max-width: 60%;
+  font-size: 3.5em;
+  font-weight: 700;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #3cff00;
+`;
+export const TitleSpan = styled.span`
+  font-size: 15px;
+  margin-top: -10px;
+  font-weight: 600;
+  color: #fff;
 `;
 export const FormWrapper = styled.div`
   width: 100%;

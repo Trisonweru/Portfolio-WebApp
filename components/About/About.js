@@ -2,6 +2,7 @@ import React from "react";
 import SVGImage from "../../public/Svg-6.svg";
 import SVGImage2 from "../../public/Svg-7.svg";
 import Contents from "./Contents";
+import styles from "./About.module.css";
 import {
   AboutWrapper,
   AboutTitleWrapper,
@@ -12,9 +13,13 @@ import {
 function About() {
   return (
     <AboutWrapper>
+      <div className={styles.AboutHero}>
+        <Titleh1>{"About me"}</Titleh1>
+        <TitleSpan>{"My Personal Journey"}</TitleSpan>
+      </div>
       <AboutTitleWrapper>
-        <Titleh1>Qualification</Titleh1>
-        <TitleSpan>My personal journey</TitleSpan>
+        {/* <Titleh1>Qualification</Titleh1>
+        <TitleSpan>My personal journey</TitleSpan> */}
       </AboutTitleWrapper>
       <Contents
         title="Education"

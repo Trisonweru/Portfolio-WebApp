@@ -7,7 +7,6 @@ export const AboutWrapper = styled.div`
   justify-content: start;
   align-items: center;
   width: 100%;
-  padding-top: 20px;
   margin-bottom: 50px;
 `;
 export const AboutTitleWrapper = styled.div`
@@ -17,13 +16,17 @@ export const AboutTitleWrapper = styled.div`
   align-items: center;
 `;
 export const Titleh1 = styled.h1`
-  font-size: 38px;
-  color: #01bf71;
+  color: #fff;
+  max-width: 60%;
+  font-size: 3.5em;
+  font-weight: 700;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #3cff00;
 `;
 export const TitleSpan = styled.span`
   font-size: 15px;
   margin-top: -10px;
   font-weight: 600;
+  color: #fff;
 `;
 export const ContentWrapper = styled.div`
   display: flex;

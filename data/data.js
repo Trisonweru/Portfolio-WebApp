@@ -125,10 +125,13 @@ export const payment_gateways = [
   },
 ];
 
-export const blogs = [
+export const ux_ui = [
   {
-    image: "some url",
-    title: "How to make yourself a blog website.",
-    description: "This is a description of how tomake a blog.",
+    skill: "Figma",
+    level: 100,
+  },
+  {
+    skill: "Framer",
+    level: 80,
   },
 ];

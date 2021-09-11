@@ -7,13 +7,7 @@ import * as data from "../../data/data";
 function Navigation({ toggle, scrolled }) {
   const router = useRouter();
   return (
-    <div
-      className={
-        scrolled || router.pathname !== "/"
-          ? styles.header
-          : styles.header_scrolled
-      }
-    >
+    <div className={scrolled ? styles.header : styles.header_scrolled}>
       <div className={styles.wrapper}>
         <Link href="/">
           <h1 className={styles.Logo}>Isaac Waweru</h1>

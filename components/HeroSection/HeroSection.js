@@ -27,7 +27,9 @@ function HeroSection(props) {
     // props.dispatch({ type: "HOME_CLICKED", payload: hover });
     // props.home_click(hover);
   };
-
+  const today = Date().toLocaleString();
+  const dateSplit = today.split(" ");
+  console.log(dateSplit[2]);
   return (
     <div className={styles.hero_container}>
       <div className={styles.HeroHeading}>
@@ -95,7 +97,15 @@ function HeroSection(props) {
         </div>
       </div>
       <div className={styles.timeDisplay}>
-        <div className={styles.circle}>{"Available for work"}</div>
+        <div className={styles.circle}>
+          <div className={styles.dateDiv}>
+            <span className={styles.date}>{dateSplit[2]}</span>
+          </div>
+          <div className={styles.monthDiv}>
+            <span className={styles.month}>{dateSplit[1]} </span>
+            {" Available for work"}
+          </div>
+        </div>
       </div>
       <div className={styles.hero_bg}></div>
 

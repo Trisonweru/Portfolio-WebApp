@@ -3,11 +3,7 @@ import styles from "./Skills.module.css";
 import SVG2 from "../../public/Svg-2.svg";
 import Image from "next/image";
 import { connect } from "react-redux";
-import {
-  frontend_skills,
-  backend_skills,
-  payment_gateways,
-} from "../../data/data";
+import { frontend_skills, backend_skills, ux_ui } from "../../data/data";
 
 import {
   UilBracketsCurly,
@@ -160,7 +156,7 @@ function Skills() {
                     <TittleIconWrapper>
                       <UilBill size="30px" color="#01bf71" />
                     </TittleIconWrapper>
-                    <TittleTextWrapper>Payment Gateways</TittleTextWrapper>
+                    <TittleTextWrapper>UX/UI Design Skills</TittleTextWrapper>
                   </Title>
                   <TittleSpan>3+ years of experience</TittleSpan>
                 </TittleWrapper>
@@ -170,7 +166,7 @@ function Skills() {
               </HeaderSkill>
               {paymentClicked ? (
                 <BodyContent>
-                  {payment_gateways.map((item, index) => (
+                  {ux_ui.map((item, index) => (
                     <ProgressWrapper key={index}>
                       <ContentTitle>{item.skill}</ContentTitle>
                       <Progress percent={item.level} />
