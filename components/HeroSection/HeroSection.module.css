@@ -539,7 +539,6 @@
     top: 25%;
     left: 0;
     width: 100%;
-    /* padding-top: 30px; */
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
@@ -632,7 +631,7 @@
 @media screen and (max-width: 350px) {
   .btn_wrapper {
     width: 100%;
-    top: 50%;
+    top: 60%;
     left: 0px;
     display: flex;
     justify-content: center;
