@@ -545,7 +545,7 @@
     top: 60%;
     right: 20px;
     width: 100%;
-    height: 30%;
+    padding: 10px;
   }
   .date {
     font-size: 3em;
