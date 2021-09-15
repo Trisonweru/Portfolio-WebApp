@@ -521,8 +521,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 30px;
-    padding-left: 30px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
