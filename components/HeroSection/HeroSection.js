@@ -118,36 +118,6 @@ function HeroSection(props) {
         </div>
       </div>
       <div className={styles.hero_bg}></div>
-
-      {/* 
-      <div className={styles.hero_content}>
-        <h1 className={styles.h1}>{"Hi, I'am Isaac"}</h1>
-        <h3 className={styles.h3}>{"Full stack web developer"}</h3>
-        <p className={styles.p}>
-          {
-            "High level experience in full stack web design and development knowledge, producing quality work."
-          }
-        </p>
-        <div className={styles.btn_wrapper}>
-          <button
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            className={styles.btn}
-            onClick={handleClick}
-          >
-            <span className={styles.spanElement}></span>
-            {" Contact me"} {hover ? <UilAngleRight /> : <UilArrowRight />}
-          </button>
-        </div>
-      </div>
-      <div className={styles.left_skills}>
-        <h2 className={styles.h2}>{"Skills"}</h2>
-        <div className={styles.skill1}>{"React JS"}</div>
-        <div className={styles.skill2}>{"Next JS"}</div>
-        <div className={styles.skill3}>{"Redux"}</div>
-        <div className={styles.skill4}>{"GraphQL"}</div> 
-      </div> */}
-      {/* <Card /> */}
     </div>
   );
 }
