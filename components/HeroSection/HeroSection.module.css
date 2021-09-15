@@ -513,6 +513,19 @@
   .headingH1 {
     font-size: 3em;
   }
+  .hero_bg {
+    display: none;
+  }
+  .HeroHeading {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -525,10 +538,16 @@
   .p {
     font-size: 18px;
   }
+  .headingH1 {
+    font-size: 2.8em;
+  }
 }
 @media screen and (max-width: 568px) {
   .hero_container {
     height: 420px;
+  }
+  .headingH1 {
+    font-size: 2.6em;
   }
 }
 @media screen and (max-width: 480px) {
@@ -540,5 +559,8 @@
   }
   .p {
     font-size: 14px;
+  }
+  .headingH1 {
+    font-size: 2.4em;
   }
 }
