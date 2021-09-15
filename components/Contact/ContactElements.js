@@ -48,11 +48,13 @@ export const Titleh1 = styled.h1`
   @media screen and (max-width: 1200px) {
     .headingH1 {
       font-size: 3em;
+      max-width: 80%;
     }
   }
   @media screen and (max-width: 768px) {
     .headingH1 {
       font-size: 2.5em;
+      max-width: 900%;
     }
   }
 `;
