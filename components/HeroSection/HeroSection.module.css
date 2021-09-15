@@ -609,8 +609,6 @@
   }
 }
 @media screen and (max-width: 568px) {
-  .hero_container {
-  }
   .headingH1 {
     font-size: 2.3em;
     max-width: 100%;
@@ -675,23 +673,4 @@
     justify-content: center;
     align-items: center;
   }
-  /*
-  .timeDisplay {
-    position: absolute;
-    top: 60%;
-    right: 20px;
-    width: 60%;
-    padding: 10px;
-  }
-  .subHeading {
-    position: absolute;
-    top: 30%;
-    left: 0;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
 }
