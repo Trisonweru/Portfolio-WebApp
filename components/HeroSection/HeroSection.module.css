@@ -517,9 +517,8 @@
     display: none;
   }
   .HeroHeading {
-    position: absolute;
     top: 0;
-    left: 20px;
+    left: 0;
     width: 100%;
     margin-top: -40px;
     display: flex;
