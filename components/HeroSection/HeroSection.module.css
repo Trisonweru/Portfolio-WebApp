@@ -619,4 +619,11 @@
     justify-content: center;
     align-items: center;
   }
+  .timeDisplay {
+    position: absolute;
+    top: 60%;
+    right: 20px;
+    width: 60%;
+    padding: 10px;
+  }
 }
