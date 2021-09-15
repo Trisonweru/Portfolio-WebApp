@@ -45,7 +45,7 @@ function HeroSection(props) {
       <div className={styles.HeroHeading}>
         <h1 className={styles.headingH1}>
           {
-            " I'm Freelance Full-Stack Web Developer Bringing Your Ideas Into Life "
+            " I'm Freelance Full-Stack Web Developer Turning Your Ideas Into Fly "
           }
         </h1>
       </div>
