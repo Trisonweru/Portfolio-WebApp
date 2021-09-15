@@ -634,7 +634,7 @@
     max-width: 100%;
     text-align: center;
   }
-  .btn_wrapper {
+  /* .btn_wrapper {
     width: 100%;
     top: 60%;
     left: 0px;
@@ -659,5 +659,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 }
