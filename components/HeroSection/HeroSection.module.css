@@ -520,7 +520,7 @@
   .HeroHeading {
     top: 0;
     left: 0;
-    width: 80%;
+    width: 100%;
     padding-top: 30px;
     padding-left: 30px;
     display: flex;
