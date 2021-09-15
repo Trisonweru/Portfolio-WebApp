@@ -544,11 +544,14 @@
     position: absolute;
     top: 60%;
     right: 20px;
-    width: 100%;
+    width: 50%;
     padding: 10px;
   }
   .date {
     font-size: 3em;
+  }
+  .social_container {
+    display: none;
   }
 }
 
