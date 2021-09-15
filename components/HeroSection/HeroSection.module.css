@@ -542,8 +542,8 @@
     font-size: 18px;
   }
   .headingH1 {
-    font-size: 2em;
-    max-width: 60%;
+    font-size: 2.5em;
+    max-width: 98%;
   }
 }
 @media screen and (max-width: 568px) {
@@ -551,8 +551,8 @@
     height: 420px;
   }
   .headingH1 {
-    font-size: 1.3em;
-    max-width: 60%;
+    font-size: 2.3em;
+    max-width: 98%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -566,6 +566,6 @@
     font-size: 14px;
   }
   .headingH1 {
-    font-size: 1em;
+    font-size: 1.8em;
   }
 }
