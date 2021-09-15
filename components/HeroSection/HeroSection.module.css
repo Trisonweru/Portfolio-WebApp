@@ -536,7 +536,7 @@
   }
   .subHeading {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 0;
     width: 100%;
     /* padding-top: 30px; */
@@ -550,6 +550,7 @@
     color: #b4b9b752;
     font-size: 15px;
     max-width: 100%;
+    text-align: center;
   }
   .month {
     margin: 5px;
