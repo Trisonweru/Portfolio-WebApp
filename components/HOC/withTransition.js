@@ -5,7 +5,7 @@ const withTransition = (OriginalComponent) => {
   const MyComp = () => (
     <>
       <OriginalComponent />
-      <motion.div
+      {/* <motion.div
         className={styles.slide_in}
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 0 }}
@@ -18,7 +18,7 @@ const withTransition = (OriginalComponent) => {
           >{`"Positivity always wins. Always"`}</span>
           <div className={styles.authorDiv}>{`-Gary Vaynerchuk-`}</div>
         </div>
-      </motion.div>
+      </motion.div> */}
       <motion.div
         className={styles.slide_out}
         initial={{ scaleX: 1 }}
