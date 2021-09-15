@@ -169,7 +169,7 @@
   justify-content: flex-start;
 }
 .date {
-  font-size: 4em;
+  font-size: 3, 5em;
   font-weight: 700;
   color: #090d0d;
   text-shadow: 0 0 3px #fff, 0 0 5px #01bf71;
@@ -539,6 +539,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .timeDisplay {
+    position: absolute;
+    top: 60%;
+    right: 20px;
+    width: 100%;
+    height: 30%;
+  }
+  .date {
+    font-size: 3em;
   }
 }
 
