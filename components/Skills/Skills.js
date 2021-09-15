@@ -39,7 +39,7 @@ function Skills() {
   const [paymentClicked, setPaymentClicked] = useState(false);
 
   const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 0.6], [0.1, 1.5]);
+  const scale = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.5]);
 
   const toggleSkills = () => {
     setSkillClicked(!skillClicked);
