@@ -10,4 +10,4 @@ function index() {
   );
 }
 
-export default withTransition(index);
+export default index;
