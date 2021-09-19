@@ -20,6 +20,14 @@ export const Titleh1 = styled.h1`
   font-size: 3.5em;
   font-weight: 700;
   text-shadow: 0 0 3px #ff0000, 0 0 5px #3cff00;
+  @media screen and (max-width: 1200px) {
+    font-size: 2.5em;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.8em;
+    max-width: 100%;
+  }
 `;
 export const TitleSpan = styled.span`
   font-size: 15px;

@@ -148,7 +148,7 @@ function Contact() {
         <ContactSection>
           <HeadingWrapper>
             <Heading>{"Let's Talk"}</Heading>
-            <HeadingSpan>{"Get in touch"}</HeadingSpan>
+            {/* <HeadingSpan>{"Get in touch"}</HeadingSpan> */}
           </HeadingWrapper>
           {submitted ? (
             <ResponseMessage>

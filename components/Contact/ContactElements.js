@@ -37,6 +37,14 @@ export const HeadingWrapper = styled.div`
 export const Heading = styled.h1`
   font-size: 38px;
   color: #01bf71;
+  @media screen and (max-width: 1200px) {
+    font-size: 2.5em;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.8em;
+    max-width: 100%;
+  }
 `;
 
 export const Titleh1 = styled.h1`
@@ -130,7 +138,6 @@ export const CallBtnWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 80px;
-  // margin-botton: -100px;
   z-index: 3;
   background: #dbe0de;
   padding: 5px;
