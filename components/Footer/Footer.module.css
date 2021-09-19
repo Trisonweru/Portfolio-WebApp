@@ -93,6 +93,9 @@
   text-align: center;
   cursor: pointer;
 }
+.input_wrapper > .clickToCopy {
+  font-size: 0px;
+}
 .input_wrapper:hover .clickToCopy {
   padding: 10px 15px;
   width: 280px;
