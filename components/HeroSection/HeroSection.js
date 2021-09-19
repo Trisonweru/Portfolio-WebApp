@@ -100,9 +100,14 @@ function HeroSection(props) {
             </a>
           </div>
           <div className={styles.icon_container}>
-            <Link href="https://wa.me/2540705992717" passHref={true}>
+            <a
+              href="https://wa.me/2540705992717"
+              target="_blank"
+              rel="noopener noreferrer"
+              passHref={true}
+            >
               <UilWhatsapp size="25px" color="#fff" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
