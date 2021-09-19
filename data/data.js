@@ -67,39 +67,28 @@ export const services = [
 ];
 export const frontend_skills = [
   {
-    skill: "HTML",
-    level: 90,
+    skill: "HTML| CSS | BOOSTRAP",
+    level: 100,
+  },
+
+  {
+    skill: "Javascript | ReactJs | NextJs",
+    level: 100,
   },
   {
-    skill: "CSS",
-    level: 90,
-  },
-  {
-    skill: "Javascript",
-    level: 85,
-  },
-  {
-    skill: "React Js",
-    level: 90,
-  },
-  {
-    skill: "Next Js",
-    level: 90,
-  },
-  {
-    skill: "Redux",
-    level: 80,
+    skill: "Redux | Styled Components | Material UI ",
+    level: 100,
   },
 ];
 
 export const backend_skills = [
   {
     skill: "GraphQL",
-    level: 90,
+    level: 100,
   },
   {
     skill: "Node Js",
-    level: 80,
+    level: 100,
   },
   {
     skill: "Mongoose",
@@ -132,6 +121,6 @@ export const ux_ui = [
   },
   {
     skill: "Framer",
-    level: 80,
+    level: 100,
   },
 ];
