@@ -21,11 +21,27 @@ export const Titleh1 = styled.h1`
   font-weight: 700;
   text-shadow: 0 0 3px #ff0000, 0 0 5px #3cff00;
   @media screen and (max-width: 1200px) {
-    font-size: 2.5em;
+    font-size: 3em;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 968px) {
+    font-size: 3em;
     max-width: 100%;
   }
   @media screen and (max-width: 768px) {
+    font-size: 2.5em;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 568px) {
+    font-size: 2.3em;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 480px) {
     font-size: 1.8em;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: 1.6em;
     max-width: 100%;
   }
 `;
