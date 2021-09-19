@@ -31,7 +31,7 @@ function Footer() {
         <div
           className={styles.input_wrapper}
           onMouseEnter={hoverFunc}
-          onMouseLeave={hoverFunc1}
+          onMouseLeave={hoverFunc}
         >
           <div onClick={copyCat} className={styles.inputdiv}>
             <input
@@ -43,12 +43,7 @@ function Footer() {
               {hovered ? "Click to copy" : ""}
             </span>
           </div>
-          <div
-            className={styles.copyIcon}
-            onClick={copyCat}
-            onMouseEnter={hoverFunc}
-            onMouseLeave={hoverFunc1}
-          >
+          <div className={styles.copyIcon} onClick={copyCat}>
             <UilCopy size="25px" color="#fff" />
           </div>
         </div>
