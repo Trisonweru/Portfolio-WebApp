@@ -13,12 +13,7 @@
   flex-flow: column;
   align-items: center;
   margin-bottom: 20px;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
-    url("../../public/HeroBG.jpg");
-  background-size: cover;
-  background-position: center; */
   border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
 }
 .backgroundImage {
   border-bottom-left-radius: 50%;

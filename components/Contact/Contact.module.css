@@ -15,20 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-radius: 50px;
-  outline: none;
-  border: 1px solid #01bf71;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-  background: none;
-  white-space: nowrap;
-  padding: 12px 30px;
-  font-size: 20px;
-  color: #01bf71;
-  z-index: 10; */
 }
 .spanElement {
   width: 0;
@@ -128,7 +114,6 @@
   background-size: cover;
   background-position: center;
   border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
 }
 .backgroundImage {
   border-bottom-left-radius: 50%;
