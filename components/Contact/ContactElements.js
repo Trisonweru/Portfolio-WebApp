@@ -46,16 +46,12 @@ export const Titleh1 = styled.h1`
   font-weight: 700;
   text-shadow: 0 0 3px #ff0000, 0 0 5px #3cff00;
   @media screen and (max-width: 1200px) {
-    .headingH1 {
-      font-size: 2.5em;
-      max-width: 100%;
-    }
+    font-size: 2.5em;
+    max-width: 100%;
   }
   @media screen and (max-width: 768px) {
-    .headingH1 {
-      font-size: 1.8em;
-      max-width: 100%;
-    }
+    font-size: 1.8em;
+    max-width: 100%;
   }
 `;
 export const TitleSpan = styled.span`
