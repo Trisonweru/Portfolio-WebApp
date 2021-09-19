@@ -79,7 +79,7 @@ function Footer() {
             </a>
           </div>
           <div className={styles.icon_container}>
-            <Link href="tel:+254-011-488-4275" passHref={true}>
+            <Link href="https://wa.me/2540705992717" passHref={true}>
               <UilWhatsapp size="25px" color="#fff" />
             </Link>
           </div>
