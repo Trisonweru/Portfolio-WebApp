@@ -619,7 +619,7 @@
   }
   .subHeading {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 0;
     width: 100%;
     padding-left: 20px;
@@ -630,7 +630,7 @@
   }
   .btn_wrapper {
     width: 100%;
-    top: 60%;
+    top: 55%;
     left: 0px;
     display: flex;
     justify-content: center;
