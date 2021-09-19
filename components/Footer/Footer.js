@@ -43,7 +43,12 @@ function Footer() {
               {hovered ? "Click to copy" : ""}
             </span>
           </div>
-          <div className={styles.copyIcon} onClick={copyCat}>
+          <div
+            className={styles.copyIcon}
+            onClick={copyCat}
+            onMouseEnter={hoverFunc}
+            onMouseLeave={hoverFunc1}
+          >
             <UilCopy size="25px" color="#fff" />
           </div>
         </div>
