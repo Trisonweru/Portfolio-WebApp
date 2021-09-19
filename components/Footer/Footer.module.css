@@ -99,6 +99,7 @@
 .input_wrapper:hover .clickToCopy {
   padding: 10px 15px;
   width: 280px;
+  font-size: 16px;
 }
 .footer_title {
   display: flex;
