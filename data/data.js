@@ -94,6 +94,10 @@ export const backend_skills = [
     skill: "Mongoose",
     level: 100,
   },
+  {
+    skill: "SQL",
+    level: 100,
+  },
 ];
 export const payment_gateways = [
   {
