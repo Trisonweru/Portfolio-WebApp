@@ -75,14 +75,14 @@ function Contact() {
       project !== null &&
       message !== null
     ) {
-      const resp = await fetch("/api/mail", {
+      const res = await fetch("/api/mail", {
         method: "POST",
         body: JSON.stringify(dataObj),
         headers: {
           "Context-Type": "application/json",
         },
       });
-      const { error } = await resp.json();
+      const { error } = await res.json();
       if (error === "") {
         setSubmitted(true);
         resetter();
