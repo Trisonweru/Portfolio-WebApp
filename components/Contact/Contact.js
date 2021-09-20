@@ -79,24 +79,23 @@ function Contact() {
         method: "POST",
         body: JSON.stringify(dataObj),
         headers: {
-          "Context-Type": "application/json",
+          "Content-Type": "application/json",
         },
       });
       const { error } = await res.json();
       if (error === "") {
         setSubmitted(true);
         resetter();
+        submitContact({
+          variables: {
+            email: email,
+            name: name,
+            project: project,
+            message: message,
+          },
+        });
       }
     }
-
-    submitContact({
-      variables: {
-        email: email,
-        name: name,
-        project: project,
-        message: message,
-      },
-    });
   };
 
   const resetter = () => {
