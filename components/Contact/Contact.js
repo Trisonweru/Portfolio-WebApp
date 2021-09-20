@@ -63,6 +63,27 @@ function Contact() {
   );
 
   const handleClick = async () => {
+    const dataObj = {
+      email: email,
+      name: name,
+      project: project,
+      message: message,
+    };
+    if (
+      email !== null &&
+      name !== null &&
+      project !== null &&
+      message !== null
+    ) {
+      const resp = await fetch("/api/mail", {
+        method: "POST",
+        body: JSON.stringify(dataObj),
+        headers: {
+          "Context-Type": "application/json",
+        },
+      });
+    }
+    const { error } = await resp.json();
     submitContact({
       variables: {
         email: email,
@@ -71,7 +92,7 @@ function Contact() {
         message: message,
       },
     });
-    if (data !== null) {
+    if (data !== null && error === "") {
       setSubmitted(true);
       resetter();
     }
