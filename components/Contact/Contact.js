@@ -82,8 +82,13 @@ function Contact() {
           "Context-Type": "application/json",
         },
       });
+      const { error } = await resp.json();
+      if (error === "") {
+        setSubmitted(true);
+        resetter();
+      }
     }
-    const { error } = await resp.json();
+
     submitContact({
       variables: {
         email: email,
@@ -92,10 +97,6 @@ function Contact() {
         message: message,
       },
     });
-    if (data !== null && error === "") {
-      setSubmitted(true);
-      resetter();
-    }
   };
 
   const resetter = () => {
