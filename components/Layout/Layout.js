@@ -55,7 +55,7 @@ function Layout(props) {
       initial="hidden" // Set the initial state to variants.hidden
       animate="enter" // Animated state to variants.enter
       exit="exit" // Exit state (used later) to variants.exit
-      transition={{ type: "keyframes" }} // Set the transition to linear/spring/inertia
+      transition={{ type: "tween" }} // Set the transition to linear/spring/inertia
       className=""
     >
       <Sidebar isOpen={isOpen} toggle={toggle} />
