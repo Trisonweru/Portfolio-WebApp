@@ -5,8 +5,6 @@ import styles from "./Navigation.module.css";
 import { UilTopArrowToTop } from "@iconscout/react-unicons";
 import Footer from "../Footer/Footer";
 import MobileNav from "../MobileNav/MobileNav";
-import { motion } from "framer-motion";
-
 function Layout(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -51,7 +49,14 @@ function Layout(props) {
     exit: { opacity: 0, x: 0, y: -100 },
   };
   return (
-    <>
+    <motion.div
+      variants={variants} // Pass the variant object into Framer Motion
+      initial="hidden" // Set the initial state to variants.hidden
+      animate="enter" // Animated state to variants.enter
+      exit="exit" // Exit state (used later) to variants.exit
+      transition={{ type: "linear" }} // Set the transition to linear
+      className=""
+    >
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navigation toggle={toggle} scrolled={scrolled} />
       {isVisible ? (
@@ -65,20 +70,11 @@ function Layout(props) {
       ) : (
         ""
       )}
-      <motion.main
-        variants={variants} // Pass the variant object into Framer Motion
-        initial="hidden" // Set the initial state to variants.hidden
-        animate="enter" // Animated state to variants.enter
-        exit="exit" // Exit state (used later) to variants.exit
-        transition={{ type: "linear" }} // Set the transition to linear
-        className=""
-      >
-        {props.children}
-      </motion.main>
-      {/* <main></main> */}
+
+      <main>{props.children}</main>
       <Footer />
       <MobileNav />
-    </>
+    </motion.div>
   );
 }
 
