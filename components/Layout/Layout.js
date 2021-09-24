@@ -5,6 +5,8 @@ import styles from "./Navigation.module.css";
 import { UilTopArrowToTop } from "@iconscout/react-unicons";
 import Footer from "../Footer/Footer";
 import MobileNav from "../MobileNav/MobileNav";
+import { motion } from "framer-motion";
+
 function Layout(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
