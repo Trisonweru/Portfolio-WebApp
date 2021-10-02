@@ -62,7 +62,8 @@ function Contact() {
     }
   );
 
-  const handleClick = async () => {
+  const handleClick = async (e) => {
+    e.preventDefault();
     const dataObj = {
       email: email,
       name: name,
