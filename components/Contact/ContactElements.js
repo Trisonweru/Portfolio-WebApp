@@ -100,7 +100,7 @@ export const TitleSpan = styled.span`
   font-weight: 600;
   color: #fff;
 `;
-export const FormWrapper = styled.div`
+export const FormWrapper = styled.form`
   width: 100%;
   margin-top: 40px;
 `;
@@ -187,4 +187,8 @@ export const ResponseMessage = styled.div`
   background: #a8bdb4;
   color: #000;
   margin-top: 10px;
+`;
+
+export const FormError = styled.span`
+  color: red;
 `;
