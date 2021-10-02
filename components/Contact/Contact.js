@@ -87,7 +87,7 @@ function Contact() {
       if (error === "") {
         setSubmitted(true);
         resetter();
-        submitContact({
+        ({
           variables: {
             email: email,
             name: name,
